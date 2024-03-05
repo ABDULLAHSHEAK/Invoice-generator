@@ -12,8 +12,8 @@ use App\Http\Middleware\TokenVerificationMiddleware;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/details/{id}', [ProductController::class, 'detailsView'])->name('details.view');
-Route::get('/print/{id}', [ProductController::class,'print'])->name('print.view');
+Route::get('/details/{id}', [ProductController::class, 'detailsView'])->name('details.view')->middleware([TokenVerificationMiddleware::class]);
+Route::get('/print/{id}', [ProductController::class,'print'])->name('print.view')->middleware([TokenVerificationMiddleware::class]);
 
 // Web API Routes
 Route::post('/user-registration',[UserController::class,'UserRegistration']);
@@ -63,7 +63,7 @@ Route::post("/product-by-id",[ProductController::class,'ProductByID'])->middlewa
 
 // SUMMARY & Report
 Route::get("/summary", [DashboardController::class, 'Summary'])->middleware([TokenVerificationMiddleware::class]);
-Route::get("/sales-report/{FormDate}/{ToDate}", [ReportController::class, 'SalesReport'])->middleware([TokenVerificationMiddleware::class]);
+
 
 //
 
