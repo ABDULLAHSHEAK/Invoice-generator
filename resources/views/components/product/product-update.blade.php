@@ -2,7 +2,7 @@
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Update Product</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Update Certificate</h5>
             </div>
             <div class="modal-body">
                 <form id="update-form">
@@ -21,7 +21,7 @@
                                 <input type="text" class="form-control" id="UpdatemiddleName">
 
                                 <label class="form-label mt-2">Birth Date </label>
-                                <input type="text" class="form-control" id="UpdatebirthDate">
+                                <input type="date" class="form-control" id="UpdatebirthDate">
 
                                 <label class="form-label mt-2">Type </label>
                                 <input type="text" class="form-control" id="Updatetype">
@@ -30,16 +30,16 @@
                                 <input type="text" class="form-control" id="Updateduration">
 
                                 <label class="form-label mt-2">Entry Time </label>
-                                <input type="date" class="form-control" id="UpdateentryTime">
+                                <input type="text" class="form-control" id="UpdateentryTime">
 
                                 <label class="form-label mt-2">Working Validity Period </label>
-                                <input type="text" name="Updateperiod" value="01/01/2024 - 01/15/2024" id="Updateperiod" class="form-control" />
+                                <input type="date" name="Updateperiod" value="01/01/2024 - 01/15/2024" id="Updateperiod" class="form-control" />
 
                                 <label class="form-label mt-2">Application Status : </label>
                                 <input type="text" class="form-control" id="UpdateappStatus">
 
                                 <label class="form-label mt-2">Date of your application status is : </label>
-                                <input type="text" class="form-control" id="UpdatestatusDate">
+                                <input type="date" class="form-control" id="UpdatestatusDate">
 
                                 <label class="form-label mt-2">Reference Number </label>
                                 <input type="text" class="form-control" id="UpdaterefNumber">
@@ -54,10 +54,10 @@
                                 <input type="text" class="form-control" id="Updatenumber">
 
                                 <label class="form-label mt-2">Issu date of : </label>
-                                <input type="text" class="form-control" id="UpdateissuDate">
+                                <input type="date" class="form-control" id="UpdateissuDate">
 
                                 <label class="form-label mt-2">Expiration date of : </label>
-                                <input type="text" class="form-control" id="UpdateexpDate">
+                                <input type="date" class="form-control" id="UpdateexpDate">
 
                                 <br />
                                 <img class="w-15" id="oldImg" src="{{ asset('images/default.jpg') }}" />

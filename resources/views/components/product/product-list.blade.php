@@ -61,10 +61,9 @@
                     <td>${item['issu_date']}</td>
                     <td>${item['exp_date']}</td>
                     <td>
-                        <a href="{{ url('/details') }}/${item['id']}" style="background: #333;
-    padding: 4px 8px;
-    color: #fff;
-    border: 2px solid red;">
+                        <a href="{{ url('/details') }}/${item['user_id']}" style="background: #333;
+                            padding: 4px 8px; color: #fff;
+                            border: 2px solid red;">
                         <i class="fa text-sm fa-eye"></i></a>
 
                         <button data-path="${item['img_url']}" data-id="${item['id']}" class="editBtn btn-success"><i class="fa text-sm fa-pen"></i></button>

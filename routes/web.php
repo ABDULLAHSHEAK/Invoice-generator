@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/details/{id}', [ProductController::class, 'detailsView'])->name('details.view')->middleware([TokenVerificationMiddleware::class]);
-Route::get('/print/{id}', [ProductController::class,'print'])->name('print.view')->middleware([TokenVerificationMiddleware::class]);
+Route::get('/print/{id}', [ProductController::class,'print'])->name('print.view');
 
 // Web API Routes
 Route::post('/user-registration',[UserController::class,'UserRegistration']);

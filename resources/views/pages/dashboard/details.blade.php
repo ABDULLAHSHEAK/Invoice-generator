@@ -139,7 +139,7 @@
                         Signature
                     </li>
                 </ul>
-                <a href="{{ route('print.view', $data->id) }}" class="btn btn-primary">Print</a>
+                <a href="{{ route('print.view', $data->user_id) }}" class="btn btn-primary">Print</a>
                 <!-- Add manager name and signature here -->
             </div>
         </div>

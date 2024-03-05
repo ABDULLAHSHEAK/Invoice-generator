@@ -2,7 +2,7 @@
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Create Invoice</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Create Certificate </h5>
             </div>
             <div class="modal-body">
                 <form id="save-form">
@@ -20,7 +20,7 @@
                                 <input type="text" class="form-control" id="middleName">
 
                                 <label class="form-label mt-2">Birth Date </label>
-                                <input type="text" class="form-control" id="birthDate">
+                                <input type="date" class="form-control" id="birthDate">
 
                                 <label class="form-label mt-2">Type </label>
                                 <input type="text" class="form-control" id="type">
@@ -29,17 +29,16 @@
                                 <input type="text" class="form-control" id="duration">
 
                                 <label class="form-label mt-2">Entry Time </label>
-                                <input type="date" class="form-control" id="entryTime">
+                                <input type="text" class="form-control" id="entryTime">
 
                                 <label class="form-label mt-2">Working Validity Period </label>
-                                <input type="text" name="daterange" value="01/01/2024 - 01/15/2024" id="period"
-                                    class="form-control" />
+                                <input type="date" name="daterange" value="01/01/2024 - 01/15/2024" id="period" class="form-control" />
 
                                 <label class="form-label mt-2">Application Status : </label>
                                 <input type="text" class="form-control" id="appStatus">
 
                                 <label class="form-label mt-2">Date of your application status is : </label>
-                                <input type="text" class="form-control" id="statusDate">
+                                <input type="date" class="form-control" id="statusDate">
 
                                 <label class="form-label mt-2">Reference Number </label>
                                 <input type="text" class="form-control" id="refNumber">
@@ -54,10 +53,10 @@
                                 <input type="text" class="form-control" id="number">
 
                                 <label class="form-label mt-2">Issu date of : </label>
-                                <input type="text" class="form-control" id="issuDate">
+                                <input type="date" class="form-control" id="issuDate">
 
                                 <label class="form-label mt-2">Expiration date of : </label>
-                                <input type="text" class="form-control" id="expDate">
+                                <input type="date" class="form-control" id="expDate">
 
                                 <br />
                                 <img class="w-15" id="newImg" src="{{ asset('images/default.jpg') }}" />

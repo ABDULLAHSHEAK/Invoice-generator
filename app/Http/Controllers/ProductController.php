@@ -11,11 +11,11 @@ class ProductController extends Controller
 {
 
     public function print($id){
-        $data = Product::findOrFail($id);
+        $data = Product::where('user_id', $id)->first();
         return view('pages.dashboard.print',compact('data'));
     }
     public function detailsView($id){
-        $data = Product::findOrFail($id);
+        $data = Product::where('user_id', $id)->first();
         return view('pages.dashboard.details',compact('data'));
     }
 
@@ -38,10 +38,12 @@ class ProductController extends Controller
 
         // Upload File
         $img->move(public_path('uploads'),$img_name);
+        $userId = rand(10000000, 99999999);
 
 
         // Save To Database
         return Product::create([
+            'user_id' =>  $userId,
             'first_name'=>$request->input('first_name'),
             'sure_name'=>$request->input('sure_name'),
             'middle_name'=>$request->input('middle_name'),
